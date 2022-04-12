@@ -1,6 +1,12 @@
 server:  
   port: ${PORT:4444}
 
+spring:
+  application:
+    name: PRODUCT-SERVICE
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+
 #spring:
  # application:
   #  name: product-service

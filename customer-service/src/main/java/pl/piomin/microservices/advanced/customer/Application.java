@@ -23,6 +23,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 @EnableSwagger2
 @EnableFeignClients(clients = { AccountClient.class })
 public class Application {

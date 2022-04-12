@@ -4,13 +4,17 @@ server:
 spring:  
   application:
     name: transfer-service
-  data:
-    mongodb:
-      host: 192.168.99.100
-      port: 27017
-      username: micro 
-      password: micro
-      
+ # data:
+  ##   host: 192.168.99.100
+    #  port: 27017
+     # username: micro
+      #password: micro
+
+  spring:
+    application:
+      name: TRANSFER-SERVICE
+    zipkin:
+      base-url: http://127.0.0.1:9411/
 #eureka:
  # client:
   #  serviceUrl:
